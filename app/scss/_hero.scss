@@ -1,0 +1,62 @@
+.hero {
+    background-color: transparent;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .container {
+        
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include breakpoint-up(large) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        opacity: 0.75;
+        position: relative;
+        width: 54.6875rem;
+        max-width: 100vw;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    &__image {
+        // position: absolute;
+        background-image: url("../../images/barbell-640x426.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        // min-height: 17.5rem;
+        min-height: 100vh;
+        width: 100vw;
+
+        // @include breakpoint-up(medium) {
+        //     min-height: 25rem;
+        //     background-position: center 60%;
+        // }
+        // @include breakpoint-up(large) {
+        //     flex: 3;
+        //     order: 2;
+        //     height: 41rem;
+        //     background-image: none;
+
+        // }
+
+    }
+
+    &__text {
+        text-align: center;
+
+        @include breakpoint-up(large) {
+            flex: 2;
+            order: 1;
+            text-align: left;
+        }
+    }
+}
