@@ -14,7 +14,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;
+	// font-family: "Montserrat", sans-serif;
 	font-size: $font-med;
 	font-weight: 400;
 	color: white;
@@ -51,6 +51,9 @@ h1 {
 h2 {
 	font-size: 1.875rem;
 	margin-bottom: 1.5625rem;
+
+	text-decoration: underline;
+	letter-spacing: 5px;
 
 	@include breakpoint-up(large) {
 		font-size: 2.25rem;
@@ -137,7 +140,7 @@ button,
 	position: relative;
 	display: inline-block;
 	padding: 0.875rem 2.1875rem;
-	background: linear-gradient(to bottom, $turquoise, $darkGreen );
+	background: linear-gradient(to bottom, $turquoise, $darkGreen);
 	border: 0;
 	border-radius: 3.125rem;
 	cursor: pointer;

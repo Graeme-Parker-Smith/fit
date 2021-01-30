@@ -4,17 +4,19 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- displays site properly based on user's device -->
-
+		<meta name="description" content="Introduction for Specialized Fitness Inc." />
+		<!-- <meta name="keywords" content="HTML, CSS, JavaScript"> />
+		<meta name="author" content="Graeme Parker Smith"> -->
 		<!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
 			rel="stylesheet"
 		/> -->
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
 			rel="stylesheet"
-		/>
+		/> -->
 
 		<link rel="stylesheet" href="./app/scss/style.css" />
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
@@ -34,70 +36,87 @@
 			</header>
 			<section class="hero">
 				<div class="container">
-					<img
-						class="hero__logo"
-						src="images/SPECIALIZED+FITNESS+LOGO[1] 2014.png"
-						alt="personal trainer business logo"
-						width="300"
-						height="151"
-					/>
+					<picture>
+						<!-- 46kb -->
+						<source srcset="./images/SPECIALIZED+FITNESS+LOGO[1]2014.webp" type="image/webp" />
+						<!-- 121 kb -->
+						<img
+							class="hero__logo"
+							src="images/SPECIALIZED+FITNESS+LOGO[1]2014.png"
+							alt="personal trainer business logo"
+							width="300"
+							height="151"
+						/>
+					</picture>
 					<div class="hero__text container--pall">
 						<a href="#" class="button hero__cta">Contact Us</a>
 					</div>
 				</div>
 			</section>
 		</div>
-<div class="page-gradient">
-
-
-		<section class="locations" id="locations">
-			<h1>Specialized Fitness Inc.</h1>
-			<h2>Locations</h2>
-			<div class="locations__container">
-				<div class="locations__item">
-					<h3>San Antonio</h3>
-					<img src="images/location_sanAntonio.jpg" width="320" height="268" alt="San Antonio Location" />
-					<div class="locations__item__info">
-						<p>Phone:</p>
-						<p>(210) 745 0700</p>
-						<p>Address:</p>
-						<p>
-							<span>210 E. Ramsey Rd.</span>
-							<span>San Antonio, Tx</span>
-							<span>78216</span>
-						</p>
+		<div class="page-gradient">
+			<section class="locations" id="locations">
+				<h1>Specialized Fitness Inc.</h1>
+				<h2>Locations</h2>
+				<div class="locations__container">
+					<div class="locations__item">
+						<h3>San Antonio</h3>
+						<picture>
+							<source srcset="./images/location_sanAntonio-960x804.webp" type="image/webp" />
+							<!-- 144kb img -->
+							<img
+								src="images/location_sanAntonio-960x804.jpg"
+								width="320"
+								height="268"
+								alt="San Antonio Location"
+							/>
+						</picture>
+						<div class="locations__item__info">
+							<p>Phone:</p>
+							<p>(210) 745 0700</p>
+							<p>Address:</p>
+							<p>
+								<span>210 E. Ramsey Rd.</span>
+								<span>San Antonio, Tx</span>
+								<span>78216</span>
+							</p>
+						</div>
+					</div>
+					<div class="locations__item">
+						<h3>Boerne</h3>
+						<picture>
+							<!-- 46kb -->
+							<source srcset="./images/location_boerne.webp" type="image/webp" />
+							<!-- 121 kb -->
+							<img src="images/location_boerne.JPG" width="320" height="248" alt="San Antonio Location" />
+						</picture>
+						<div class="locations__item__info">
+							<p>Phone:</p>
+							<p>(830) 755-4838</p>
+							<p>Address:</p>
+							<p>
+								<span>31007 I 10 West</span>
+								<span>Boerne, Tx.</span>
+								<span>78006</span>
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="locations__item">
-					<h3>Boerne</h3>
-					<img src="images/location_boerne.JPG" width="320" height="248" alt="San Antonio Location" />
-					<div class="locations__item__info">
-						<p>Phone:</p>
-						<p>(830) 755-4838</p>
-						<p>Address:</p>
-						<p>
-							<span>31007 I 10 West</span>
-							<span>Boerne, Tx.</span>
-							<span>78006</span>
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="contact" id="contact">
-			<h2>Contact Us</h2>
-			<form class="contact__form" action="/">
-				<label for="name">Your Name*</label><br />
-				<input class="contact__form__input" type="text" id="name" name="name" /><br />
-				<label for="email">Your E-Mail*</label><br />
-				<input class="contact__form__input" type="email" id="email" name="email" /><br /><br />
-				<label for="message">Your Message*</label><br />
-				<textarea class="contact__form__input" type="text" id="message" name="message"></textarea>
-				<input class="contact__form__submit" type="submit" value="Send" />
-			</form>
-		</section>
-	</div>
+			<section class="contact" id="contact">
+				<h2>Contact Us</h2>
+				<form class="contact__form" action="/">
+					<label for="name">Your Name*</label><br />
+					<input class="contact__form__input" type="text" id="name" name="name" /><br />
+					<label for="email">Your Email*</label><br />
+					<input class="contact__form__input" type="email" id="email" name="email" /><br /><br />
+					<label for="message">Your Message*</label><br />
+					<textarea class="contact__form__input" type="text" id="message" name="message"></textarea>
+					<input class="contact__form__submit" type="submit" value="Send" />
+				</form>
+			</section>
+		</div>
 
 		<footer class="footer">
 			<p>©2021 Specialized Fitness Inc.</p>
