@@ -5,11 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- displays site properly based on user's device -->
 
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
 			rel="stylesheet"
+		/> -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+			rel="stylesheet"
 		/>
+
 		<link rel="stylesheet" href="./app/scss/style.css" />
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
@@ -41,8 +47,10 @@
 				</div>
 			</section>
 		</div>
+<div class="page-gradient">
 
-		<section class="locations">
+
+		<section class="locations" id="locations">
 			<h1>Specialized Fitness Inc.</h1>
 			<h2>Locations</h2>
 			<div class="locations__container">
@@ -77,18 +85,19 @@
 			</div>
 		</section>
 
-		<section class="contact">
+		<section class="contact" id="contact">
 			<h2>Contact Us</h2>
-			<form class=contact__form action="/">
-				<label for="fname">Your Name*</label><br />
+			<form class="contact__form" action="/">
+				<label for="name">Your Name*</label><br />
 				<input class="contact__form__input" type="text" id="name" name="name" /><br />
-				<label for="lname">Your E-Mail*</label><br />
+				<label for="email">Your E-Mail*</label><br />
 				<input class="contact__form__input" type="email" id="email" name="email" /><br /><br />
-				<label for="lname">Your Message*</label><br />
-				<input class="contact__form__input" type="text" id="message" name="message" /><br /><br />
+				<label for="message">Your Message*</label><br />
+				<textarea class="contact__form__input" type="text" id="message" name="message"></textarea>
 				<input class="contact__form__submit" type="submit" value="Send" />
 			</form>
 		</section>
+	</div>
 
 		<footer class="footer">
 			<p>©2021 Specialized Fitness Inc.</p>

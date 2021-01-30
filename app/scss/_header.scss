@@ -19,6 +19,12 @@
             position: relative;
 
             font-size: $font-sm;
+            @include breakpoint-up(medium) {
+                font-size: $font-med;
+            }
+            @include breakpoint-up(large) {
+                font-size: calc(1vw + 16px);
+            }
             color: white;
             opacity: 0.75;
             transition: all 300ms ease-in-out;
@@ -34,8 +40,8 @@
                 height: 5px;
                 left: 0;
                 right: 0;
-                bottom: -30px;
-                background: linear-gradient(to right, $limeGreen, $brightCyan);
+                bottom: -10px;
+                background: linear-gradient(to right, black, white);
                 opacity: 0;
                 transition: opacity 300ms ease-in-out;
             }
