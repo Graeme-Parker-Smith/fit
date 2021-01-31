@@ -23,7 +23,7 @@
 
             background-color: transparent;
             border: none;
-            border-bottom: 2px solid rgba(255,255,255, 0.25);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.25);
             margin-bottom: 10px;
             font-size: 30px;
 
@@ -34,7 +34,7 @@
         &__submit {
             // font-weight: 700;
             font-size: $font-lg;
-            display: block;
+            display: inline-block;
             margin: 0 auto;
             width: 100%;
             padding: 1rem;
@@ -48,12 +48,20 @@
             font-weight: 300;
             text-transform: uppercase;
             letter-spacing: 0.1875rem;
+            &:focus {
+                outline: none;
+            }
 
             // background: transparent;
-            background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+            // background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
 
             box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, 0.25) inset;
             cursor: pointer;
+            transition: all 1550ms ease-in-out;
+
+            &:hover {
+                background: linear-gradient(-45deg, rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.15));
+            }
         }
 
         // .inset-shadow {

@@ -25,9 +25,12 @@
         margin: 0 auto;
     }
 
+ 
+
+ 
     &__image {
         // position: absolute;
-        background-image: url("../../images/barbell-640x426.webp");
+        background-image: url("../../images/barbell-640x426.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
@@ -46,6 +49,12 @@
         //     background-image: none;
 
         // }
+    }
+    .no-webp &__image {
+        background-image: url("../../images/barbell-640x426.jpg");
+    }
+    .webp &__image {
+        background-image: url("../../images/barbell-640x426.webp");
     }
 
     &__text {
