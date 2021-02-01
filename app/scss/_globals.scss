@@ -134,6 +134,23 @@ a:hover {
 	}
 }
 
+// Grid
+.grid--2x2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--4x4 {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.pad-20 {
+	margin: 20px;
+}
+
 // Buttons
 button,
 .button {

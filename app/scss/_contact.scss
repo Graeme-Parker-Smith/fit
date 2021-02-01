@@ -29,6 +29,10 @@
 
             outline: none;
             color: white;
+
+            &__checkboxes {
+                font-size: 18px;
+            }
         }
 
         &__submit {

@@ -1,8 +1,9 @@
 .footer {
     background-color: black;
     color: $white;
-    padding: 2.5rem;
-    text-align: center;
+    padding: 1.5rem;
+    padding-bottom: 0.25rem;
+    text-align: left;
 
     .container {
         @include breakpoint-up(large) {
