@@ -57,6 +57,14 @@
     .webp &__image {
         background-image: url("../../images/barbell-640x426.webp");
     }
+    @include breakpoint-up(large) {
+        .no-webp &__image {
+            background-image: url("../../images/barbell-1920x1280.jpg");
+        }
+        .webp &__image {
+            background-image: url("../../images/barbell-1920x1280.webp");
+        }
+    }
 
     &__text {
         text-align: center;

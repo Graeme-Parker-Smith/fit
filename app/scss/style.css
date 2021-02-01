@@ -463,6 +463,14 @@ button:hover::before,
 .webp .hero__image {
   background-image: url("../../images/barbell-640x426.webp");
 }
+@media (min-width: 64em) {
+  .no-webp .hero__image {
+    background-image: url("../../images/barbell-1920x1280.jpg");
+  }
+  .webp .hero__image {
+    background-image: url("../../images/barbell-1920x1280.webp");
+  }
+}
 .hero__text {
   text-align: center;
 }
