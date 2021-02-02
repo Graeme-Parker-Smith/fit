@@ -1,20 +1,26 @@
 .footer {
     background-color: black;
     color: $white;
-    padding: 1.5rem;
-    padding-bottom: 0.25rem;
-    text-align: left;
 
-    .container {
-        @include breakpoint-up(large) {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 3fr;
-            grid-template-rows: 1fr auto;
-            grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
-            gap: 1rem;
-            justify-items: start;
-        }
+    &__content {
+        margin: 0 auto;
+        padding: 1.5rem;
+        text-align: left;
+        display: flex;
+        justify-content: space-around;
+        max-width: 600px;
     }
+
+    // .container {
+    //     @include breakpoint-up(large) {
+    //         display: grid;
+    //         grid-template-columns: 2fr 1fr 1fr 3fr;
+    //         grid-template-rows: 1fr auto;
+    //         grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    //         gap: 1rem;
+    //         justify-items: start;
+    //     }
+    // }
 
     a {
         color: $white;
@@ -32,20 +38,29 @@
     }
 
     &__social {
-        @include breakpoint-down(medium) {
-            margin-bottom: 1.875rem;
-        }
+        // @include breakpoint-down(medium) {
+        //     margin-bottom: 1.875rem;
+        // }
         @include breakpoint-up(large) {
             grid-area: social;
             align-self: end;
         }
         a {
-            display: inline-block;
-            height: 1.25rempx;
+            display: inline;
+            // height: 1.25rem;
 
-            svg path {
-                transition: fill 150ms ease-in-out;
+            svg {
+                background-color: transparent;
+                border-radius: 8%;
+                path {
+                    fill: white;
+                    transition: fill 150ms ease-in-out;
+                }
             }
+
+            // svg path {
+            //     transition: fill 150ms ease-in-out;
+            // }
             &:hover svg path {
                 fill: $limeGreen;
             }
@@ -103,12 +118,6 @@
     }
 
     &__copyright {
-        font-size: 0.8125rem;
-        color: $grayishBlue;
-        @include breakpoint-up(large) {
-            grid-area: copyright;
-            align-self: end;
-            justify-self: end;
-        }
+        font-size: calc(0.5vw + 0.8125rem);
     }
 }
