@@ -31,8 +31,10 @@ contactForm.addEventListener('submit', async function (e) {
 	submitMsgBtn.disabled = true;
 	// select form inputs
 	const name = document.getElementById('name');
-	name.addEventListener('submit', function (e) {
-		e.preventDefault();
+	name.addEventListener('keypress', function (e) {
+		if (e.keyCode == 13) {
+			email.focus();
+		}
 	});
 	const email = document.getElementById('email');
 	email.addEventListener('submit', function (e) {
