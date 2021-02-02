@@ -84,5 +84,6 @@ contactForm.addEventListener('submit', async function (e) {
 	} else {
 		// if form is not completed, do this
 		alert('Your message could not be sent because not all of the fields in the form are completed.');
+		submitMsgBtn.disabled = false;
 	}
 });
