@@ -102,7 +102,7 @@
 
 			<section class="contact" id="contact">
 				<h2>Contact Us</h2>
-				<form class="contact__form" action="" method="post">
+				<form id="contact__form" class="contact__form" action="" method="post">
 					<label for="name">Your Name*</label><br />
 					<input class="contact__form__input" type="text" id="name" name="name" /><br />
 					<label for="email">Your Email*</label><br />
@@ -114,22 +114,25 @@
 						Location*
 						<div class="pad-20 grid--4x4">
 							<!-- <div> -->
+							<label class="pad-20">San Antonio</label>
+							<input
+								id="checkbox-sanAntonio"
+								value="location-sanAntonio"
+								class="pad-20"
+								type="checkbox"
+								name="location-sanAntonio"
+							/>
+
 							<label class="pad-20">Boerne</label>
 							<input
-								value="location-boerne check-box"
+								id="checkbox-boerne"
+								value="location-boerne"
 								class="pad-20"
 								type="checkbox"
 								name="location-boerne"
 							/>
 							<!-- </div> -->
 							<!-- <div> -->
-							<label class="pad-20">San Antonio</label>
-							<input
-								value="location-sanAntonio"
-								class="pad-20 check-box"
-								type="checkbox"
-								name="location-sanAntonio"
-							/>
 							<!-- </div> -->
 						</div>
 					</label>

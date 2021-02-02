@@ -414,6 +414,7 @@ button:hover::before,
 }
 .contact__form__input__checkboxes {
   font-size: 18px;
+  text-align: center;
 }
 .contact__form input[type=checkbox] {
   -ms-transform: scale(2);
