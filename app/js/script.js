@@ -33,6 +33,7 @@ contactForm.addEventListener('submit', async function (e) {
 	const name = document.getElementById('name');
 	name.addEventListener('keypress', function (e) {
 		if (e.keyCode == 13) {
+			e.preventDefault();
 			email.focus();
 		}
 	});
