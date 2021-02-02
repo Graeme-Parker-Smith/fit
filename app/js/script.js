@@ -79,6 +79,9 @@ contactForm.addEventListener('submit', async function (e) {
 			console.log(response.status);
 			if (response.status === 200) {
 				submitMsgBtn.disabled = false;
+				alert('Your message has been sent!');
+			} else if (response.status && response.status !== 200) {
+				alert('Sorry, we were unable to send your message.');
 			}
 		});
 	} else {
