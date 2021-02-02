@@ -102,34 +102,31 @@
 
 			<section class="contact" id="contact">
 				<h2>Contact Us</h2>
-				<form id="contact__form" class="contact__form" action="" method="post">
+				<form id="contact__form" class="contact__form" action="http://localhost:3000/api/sendemail" method="post">
 					<label for="name">Your Name*</label><br />
 					<input class="contact__form__input" type="text" id="name" name="name" /><br />
 					<label for="email">Your Email*</label><br />
 					<input class="contact__form__input" type="email" id="email" name="email" /><br /><br />
-					<!-- <label for="location">Your checkbox*</label><br />
-					<input class="contact__form__input" type="checkbox" id="location-input" name="location" /><br /><br />
-					<input class="contact__form__input" type="checkbox" id="location-input" name="location" /><br /><br /> -->
 					<label class="contact__form__input__checkboxes">
 						Location*
 						<div class="pad-20 grid--4x4">
 							<!-- <div> -->
-							<label class="pad-20">San Antonio</label>
+							<label for="sanAntonio" class="pad-20">San Antonio</label>
 							<input
-								id="checkbox-sanAntonio"
+								id="sanAntonio"
 								value="location-sanAntonio"
 								class="pad-20"
 								type="checkbox"
-								name="location-sanAntonio"
+								name="sanAntonio"
 							/>
 
-							<label class="pad-20">Boerne</label>
+							<label for="boerne" class="pad-20">Boerne</label>
 							<input
-								id="checkbox-boerne"
+								id="boerne"
 								value="location-boerne"
 								class="pad-20"
 								type="checkbox"
-								name="location-boerne"
+								name="boerne"
 							/>
 							<!-- </div> -->
 							<!-- <div> -->
