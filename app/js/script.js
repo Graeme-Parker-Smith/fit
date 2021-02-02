@@ -19,6 +19,8 @@ boerneCheck.addEventListener('click', function () {
 	}
 });
 
+// moves focus to next input and prevents submit on enter key
+
 const name = document.getElementById('name');
 name.addEventListener('keypress', function (e) {
 	if (e.keyCode == 13) {
