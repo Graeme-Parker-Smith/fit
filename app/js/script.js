@@ -24,9 +24,11 @@ boerneCheck.addEventListener('click', function () {
 // ================================================================
 
 const contactForm = document.getElementById('contact__form');
+const submitMsgBtn = document.getElementById('submitMsgBtn');
 
 contactForm.addEventListener('submit', async function (e) {
 	e.preventDefault();
+	submitMsgBtn.disabled = true;
 	// select form inputs
 	const name = document.getElementById('name');
 	const email = document.getElementById('email');
@@ -43,9 +45,9 @@ contactForm.addEventListener('submit', async function (e) {
 	// const boxChecked = sanAntonio.checked || boerne.checked;
 	let location;
 	if (sanAntonio.checked && !boerne.checked) {
-		location = "San Antonio";
+		location = 'San Antonio';
 	} else if (boerne.checked && !sanAntonio.checked) {
-		location = "Boerne"
+		location = 'Boerne';
 	} else {
 		location = null;
 	}
@@ -67,8 +69,17 @@ contactForm.addEventListener('submit', async function (e) {
 			}),
 		};
 
+		name.value = null;
+		email.value = null;
+		sanAntonio.value = null;
+		boerne.value = null;
+		message.value = null;
+
 		fetch(url, options).then((response) => {
 			console.log(response.status);
+			if (response.status === 200) {
+				submitMsgBtn.disabled = false;
+			}
 		});
 	} else {
 		// if form is not completed, do this

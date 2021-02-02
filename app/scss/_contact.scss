@@ -25,10 +25,13 @@
             border: none;
             border-bottom: 2px solid rgba(255, 255, 255, 0.25);
             margin-bottom: 10px;
-            font-size: 30px;
+            font-size: 1.25rem;
 
             outline: none;
             color: white;
+
+            word-wrap: break-word;
+            word-break: break-all;
 
             &__checkboxes {
                 font-size: 18px;
