@@ -19,6 +19,14 @@ boerneCheck.addEventListener('click', function () {
 	}
 });
 
+const name = document.getElementById('name');
+	name.addEventListener('keypress', function (e) {
+		if (e.keyCode == 13) {
+			e.preventDefault();
+			email.focus();
+		}
+	});
+
 // ================================================================
 // handle contact form submit
 // ================================================================
@@ -26,17 +34,11 @@ boerneCheck.addEventListener('click', function () {
 const contactForm = document.getElementById('contact__form');
 const submitMsgBtn = document.getElementById('submitMsgBtn');
 
-contactForm.addEventListener('submit', async function (e) {
+contactForm.addEventListener('click', async function (e) {
 	e.preventDefault();
 	submitMsgBtn.disabled = true;
 	// select form inputs
-	const name = document.getElementById('name');
-	name.addEventListener('keypress', function (e) {
-		if (e.keyCode == 13) {
-			e.preventDefault();
-			email.focus();
-		}
-	});
+	
 	const email = document.getElementById('email');
 	email.addEventListener('submit', function (e) {
 		e.preventDefault();
