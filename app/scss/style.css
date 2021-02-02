@@ -380,6 +380,7 @@ button:hover::before,
   grid-template-columns: repeat(2, 1fr);
 }
 .locations__item__info p {
+  color: white;
   margin-left: 10px;
   margin-right: 10px;
 }
