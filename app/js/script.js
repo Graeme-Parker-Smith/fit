@@ -31,10 +31,19 @@ contactForm.addEventListener('submit', async function (e) {
 	submitMsgBtn.disabled = true;
 	// select form inputs
 	const name = document.getElementById('name');
+	name.addEventListener('submit', function (e) {
+		e.preventDefault();
+	});
 	const email = document.getElementById('email');
+	email.addEventListener('submit', function (e) {
+		e.preventDefault();
+	});
 	const sanAntonio = document.getElementById('sanAntonio');
 	const boerne = document.getElementById('boerne');
 	const message = document.getElementById('message');
+	message.addEventListener('submit', function (e) {
+		e.preventDefault();
+	});
 	// check do all inputs have a value?
 	console.log('contactForm children', name.value);
 	console.log('contactForm children', email.value);
