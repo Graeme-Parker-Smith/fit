@@ -20,12 +20,21 @@ boerneCheck.addEventListener('click', function () {
 });
 
 const name = document.getElementById('name');
-	name.addEventListener('keypress', function (e) {
-		if (e.keyCode == 13) {
-			e.preventDefault();
-			email.focus();
-		}
-	});
+name.addEventListener('keypress', function (e) {
+	if (e.keyCode == 13) {
+		e.preventDefault();
+		email.focus();
+		return;
+	}
+});
+const email = document.getElementById('email');
+email.addEventListener('keypress', function (e) {
+	if (e.keyCode == 13) {
+		e.preventDefault();
+		sanAntonioCheck.focus();
+		return;
+	}
+});
 
 // ================================================================
 // handle contact form submit
@@ -34,11 +43,11 @@ const name = document.getElementById('name');
 const contactForm = document.getElementById('contact__form');
 const submitMsgBtn = document.getElementById('submitMsgBtn');
 
-contactForm.addEventListener('click', async function (e) {
+contactForm.addEventListener('submit', async function (e) {
 	e.preventDefault();
 	submitMsgBtn.disabled = true;
 	// select form inputs
-	
+
 	const email = document.getElementById('email');
 	email.addEventListener('submit', function (e) {
 		e.preventDefault();
