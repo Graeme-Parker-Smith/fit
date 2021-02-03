@@ -61,11 +61,6 @@ contactForm.addEventListener('submit', async function (e) {
 		e.preventDefault();
 	});
 	// check do all inputs have a value?
-	console.log('contactForm children', name.value);
-	console.log('contactForm children', email.value);
-	console.log('contactForm children', sanAntonio.value);
-	console.log('contactForm children', boerne.value);
-	console.log('contactForm children', message.value);
 	const inputsAreFilled = name.value && email.value && message.value;
 	// const boxChecked = sanAntonio.checked || boerne.checked;
 	let location;
@@ -101,7 +96,6 @@ contactForm.addEventListener('submit', async function (e) {
 		message.value = null;
 
 		fetch(url, options).then((response) => {
-			console.log(response.status);
 			if (response.status === 200) {
 				submitMsgBtn.disabled = false;
 				alert('Your message has been sent!');
